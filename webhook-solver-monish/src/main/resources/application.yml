@@ -1,0 +1,23 @@
+app:
+  name: "Monish"
+  regNo: "22BCE8606"
+  email: "your-email@example.com"
+
+external:
+  generateWebhookUrl: "https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA"
+  fallbackSubmitUrl: "http://localhost:8080/hiring/testWebhook/JAVA"
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+
+server:
+  port: 8080
